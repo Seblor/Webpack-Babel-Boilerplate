@@ -1,0 +1,30 @@
+{
+  "name": "webpack_babel_bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "eslint": "^5.16.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "scripts": {
+    "build:watch": "webpack-dev-server --config webpack.config.dev.js --watch",
+    "build:dev": "webpack-cli --config webpack.config.dev.js",
+    "build": "webpack-cli --config webpack.config.prod.js",
+    "help": "webpack-cli --help"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
